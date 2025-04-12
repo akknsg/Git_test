@@ -44,7 +44,7 @@ device = {
 
 # Establish a connection to the device
 try:
-    connection = ConnectHandler(**device)
+    connection = ConnectHandler()
     connection.enable()  # Enter enable mode if required
 
     # Send a command and capture the output
