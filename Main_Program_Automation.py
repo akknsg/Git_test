@@ -1,6 +1,24 @@
 import netmiko
 from netmiko import ConnectHandler
 from cyberark.identity import CyberArkIdentity
+import io
+import os
+import sys
+import logging
+
+# Open the file in read mode
+with open('Device_IP_Details.txt', 'r') as file:
+    # Read all lines into a list
+    lines = file.readlines()
+
+# Get a specific line (e.g., line 3, index starts from 0)
+line_number = 2  # Adjust to the line you want
+if line_number < len(lines):
+    selected_line = lines[line_number]
+    print(f"The selected line is: {selected_line.strip()}")
+else:
+    print("The specified line number is out of range.")
+
 
 # Example usage of Netmiko to connect to a network device
 # Retrieve credentials from CyberArk
