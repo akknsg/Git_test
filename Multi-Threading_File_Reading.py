@@ -2,12 +2,12 @@ import threading
 import time
 
 def task1():
-    for i in range(6):
+    for i in range(4):
         print(f"Task 1 - Step {i}")
         time.sleep(1)  # Simulating a delay
 
 def task2():
-    for i in range(7):
+    for i in range(4):
         print(f"Task 2 - Step {i}")
         time.sleep(1)  # Simulating a delay
 
