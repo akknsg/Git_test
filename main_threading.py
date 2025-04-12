@@ -1,10 +1,10 @@
 # main.py
 import threading
 import subprocess
-
+path = "/home/master/python_projects/Multi-Threading_File_Reading.py"
 def run_subprocess():
     # Run the main_sub_process_threading.py file
-    subprocess.run(["python", "main_sub_process_threading.py"])
+    subprocess.run(["python", path])
 
 if __name__ == "__main__":
     # Create a thread to run main_sub_process_threading.py
